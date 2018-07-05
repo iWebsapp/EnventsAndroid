@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">EventsAndroid</string>
-    <string name="button">Button</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="getIn">Entrar</string>
+    <string name="createAccount">Crear cuenta</string>
+    <string name="next">Siguiente</string>
+    <string name="register">Registrar</string>
+    <string name="manyLocal">¿Con cuántos locales cuentas?</string>
+    <string name="numLocal">Numero de locales</string>
+    <string name="addPromotion">¿Quieres agregar tus promociones?</string>
+    <string name="addMenu">¿Quieres agregar tu menú?</string>
+    <string name="assignTable">Tu cliete, ¿Púede asignar su mesa de manera garantizada?</string>
+    <string name="askBuy">¿Tus clientes pueden realizar compras del menú?</string>
 </resources>

@@ -5,61 +5,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/create_user"
-    tools:context="com.mireya.eventsandroid.domain.account.create.view.CreateAccount">
+    android:background="@drawable/register_buy"
+    tools:context="com.mireya.eventsandroid.domain.account.purchases.view.PurchasesActivity">
 
     <include layout="@layout/toolbar"/>
 
     <ImageView
-        android:id="@+id/user"
+        android:id="@+id/icBuy"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="64dp"
-        android:src="@drawable/user"
+        android:src="@drawable/buy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/app_name" />
 
-    <EditText
-        android:id="@+id/email"
+    <TextView
+        android:id="@+id/askBuy"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/askBuy"
+        style="@style/texto"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/btnround"
-        android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user"
-        android:inputType="text"
-        tools:ignore="TextFields" />
+        app:layout_constraintTop_toBottomOf="@+id/icBuy" />
 
-    <EditText
-        android:id="@+id/paswword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginEnd="64dp"
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/btnround"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/like"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/askBuy"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/dislike"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/dislike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askBuy"
+        android:contentDescription="@string/app_name" />
 
     <Button
-        android:id="@+id/btnGetIn"
+        android:id="@+id/next"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/btnround"
         android:text="@string/next"
         android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paswword" />
+        app:layout_constraintTop_toBottomOf="@+id/like" />
 
 </android.support.constraint.ConstraintLayout>

@@ -5,50 +5,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/create_user"
-    tools:context="com.mireya.eventsandroid.domain.account.create.view.CreateAccount">
+    android:background="@drawable/register_local"
+    tools:context="com.mireya.eventsandroid.domain.account.local.view.LocalActivity">
 
     <include layout="@layout/toolbar"/>
 
     <ImageView
-        android:id="@+id/user"
+        android:id="@+id/local"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="64dp"
-        android:src="@drawable/user"
+        android:src="@drawable/local"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/app_name" />
 
-    <EditText
-        android:id="@+id/email"
+    <TextView
+        android:id="@+id/manyLocal"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/manyLocal"
+        style="@style/texto"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/btnround"
-        android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user"
-        android:inputType="text"
-        tools:ignore="TextFields" />
+        app:layout_constraintTop_toBottomOf="@+id/local" />
 
     <EditText
-        android:id="@+id/paswword"
+        android:id="@+id/numLocal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btnround"
-        android:hint="@string/password"
-        android:inputType="textPassword"
+        android:hint="@string/numLocal"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/manyLocal" />
 
     <Button
         android:id="@+id/btnGetIn"
@@ -60,6 +58,6 @@
         android:text="@string/next"
         android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paswword" />
+        app:layout_constraintTop_toBottomOf="@+id/numLocal" />
 
 </android.support.constraint.ConstraintLayout>
