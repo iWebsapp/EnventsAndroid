@@ -12,4 +12,14 @@ public class AddMenuPresenterImpl implements AddMenuPresenter {
         this.view = view;
         interactor = new AddMenuInteractorImpl(this);
     }
+
+    @Override
+    public void goPurchases() {
+        view.goPurchases();
+    }
+
+    @Override
+    public void goTable() {
+        view.goTable();
+    }
 }

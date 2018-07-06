@@ -12,4 +12,9 @@ public class CreateAccountPresenterImpl implements CreateAccountPresenter{
         this.view = view;
         interactor = new CreateAccountInteractorImpl(this);
     }
+
+    @Override
+    public void goLocales() {
+        view.goLocales();
+    }
 }

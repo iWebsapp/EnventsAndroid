@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">EventsAndroid</string>
+    <string name="navProfile">Perfil</string>
+    <string name="navMap">Mapa</string>
+    <string name="navEvent">Mis eventos</string>
+    <string name="navNoti">Notificaciones</string>
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>
     <string name="getIn">Entrar</string>
