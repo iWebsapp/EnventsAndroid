@@ -3,13 +3,14 @@
     package="com.mireya.eventsandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -25,28 +26,30 @@
             android:name="io.fabric.ApiKey"
             android:value="3f4041f8d213c2111e4fbaf426aad1a46f4953a5" />
 
-        <activity android:name="com.mireya.eventsandroid.domain.splash.view.SplashActivity">
+        <activity android:name=".domain.splash.view.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mireya.eventsandroid.domain.account.login.view.LoginActivity" >
+        <activity android:name=".domain.account.login.view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mireya.eventsandroid.domain.account.create.view.CreateAccount" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.addmenu.view.AddMenu" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.customers.view.CustomersActivity" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.drink.view.DrinkActivity" />
-
-        <activity android:name="com.mireya.eventsandroid.domain.account.local.view.LocalActivity" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.promotions.view.PromotionsActivity" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.tables.view.TableActivity" />
-        <activity android:name="com.mireya.eventsandroid.domain.account.purchases.view.PurchasesActivity" />
-        <activity android:name="com.mireya.eventsandroid.domain.main.view.MainActivity"></activity>
+        <activity android:name=".domain.account.create.view.CreateAccount" />
+        <activity android:name=".domain.account.addmenu.view.AddMenu" />
+        <activity android:name=".domain.account.customers.view.CustomersActivity" />
+        <activity android:name=".domain.account.drink.view.DrinkActivity" />
+        <activity android:name=".domain.account.local.view.LocalActivity" />
+        <activity android:name=".domain.account.promotions.view.PromotionsActivity" />
+        <activity android:name=".domain.account.tables.view.TableActivity" />
+        <activity android:name=".domain.account.purchases.view.PurchasesActivity" />
+        <activity android:name=".domain.main.view.MainActivity" />
+        <activity android:name=".domain.profile.view.ProfileFragment"></activity>
     </application>
 
 </manifest>

@@ -12,10 +12,14 @@
         android:title="@string/navMap" />
 
     <item
-        android:id="@+id/navigation_event"
-        android:icon="@drawable/ic_event"
-        android:title="@string/navEvent" />
+        android:id="@+id/navigation_cuopons"
+        android:icon="@drawable/ic_coupons"
+        android:title="@string/navCoupons" />
 
+    <item
+        android:id="@+id/navigation_card"
+        android:icon="@drawable/ic_card"
+        android:title="@string/navCard" />
     <item
         android:id="@+id/navigation_notification"
         android:icon="@drawable/ic_notification"
