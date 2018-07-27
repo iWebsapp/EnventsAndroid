@@ -3,7 +3,6 @@ package com.mireya.eventsandroid.domain.profile.view;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -41,10 +40,11 @@ public class ProfileFragment extends Fragment implements ProfileView{
 
     private void setUpView(View view) {
         List<ProfileData> teacherData = new ArrayList<>();
-        //teacherData.add(new ProfileData("Mireya Jimenez Perez", "Programación Android"));
-        teacherData.add(new ProfileData(1, R.drawable.ic_about, "Informacion"));
-        teacherData.add(new ProfileData(2, R.drawable.avatar, "Configuracion"));
-
+        teacherData.add(new ProfileData(1, R.drawable.ic_settings, R.string.configuration));
+        teacherData.add(new ProfileData(2, R.drawable.ic_event, R.string.myEvent));
+        teacherData.add(new ProfileData(3, R.drawable.ic_about, R.string.aboutUs));
+        teacherData.add(new ProfileData(4, R.drawable.ic_report, R.string.reportProblem));
+        teacherData.add(new ProfileData(5, R.drawable.ic_help, R.string.help));
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -52,7 +52,5 @@ public class ProfileFragment extends Fragment implements ProfileView{
         recyclerView.setLayoutManager(linearLayoutManager);
         RecyclerView.Adapter adapter = new ProfileAdapter(getContext(), presenter, teacherData);
         recyclerView.setAdapter(adapter);
-        Log.d(TAG, "profile fragment");
     }
-
 }

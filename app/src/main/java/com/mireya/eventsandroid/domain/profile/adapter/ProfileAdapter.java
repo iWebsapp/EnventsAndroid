@@ -1,5 +1,6 @@
 package com.mireya.eventsandroid.domain.profile.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
@@ -36,10 +37,8 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         holder.title.setText(teacherData.get(position).getTitle());
-        //holder.photo.setDra
-        //holder.photo.setText(teacherData.get(position).getPhotoId());
         holder.photo.setImageResource(teacherData.get(position).getPhotoId());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override

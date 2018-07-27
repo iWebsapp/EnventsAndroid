@@ -7,22 +7,23 @@
     tools:context=".domain.profile.view.ProfileFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgEncabezado"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
         android:src="@drawable/header1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgAvatar"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +35,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="@string/name"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        style="@style/texto"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -44,20 +46,18 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/carrear"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        style="@style/texto"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imgEncabezado"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar" />
 
 </android.support.constraint.ConstraintLayout>

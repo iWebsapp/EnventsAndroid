@@ -1,11 +1,11 @@
 package com.mireya.eventsandroid.domain.profile.data;
 
 public class ProfileData {
-    int id;
-    int photoId;
-    String title;
+    private int id;
+    private int photoId;
+    private int title;
 
-    public ProfileData(int id, int photoId, String title) {
+    public ProfileData(int id, int photoId, int title) {
         this.id = id;
         this.photoId = photoId;
         this.title = title;
@@ -23,15 +23,11 @@ public class ProfileData {
         return photoId;
     }
 
-    public void setPhotoId(int photoId) {
-        this.photoId = photoId;
-    }
-
-    public String getTitle() {
+    public int getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(int title) {
         this.title = title;
     }
 }

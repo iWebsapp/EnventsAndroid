@@ -19,9 +19,13 @@
     <string name="askBuy">¿Tus clientes pueden realizar compras del menú?</string>
     <string name="name">Mireya Jimenez</string>
     <string name="carrear">Ingenieria en software</string>
-    <string name="aboutUs">Quiénes somos</string>
     <string name="information">Información</string>
     <string name="coments">Comentarios</string>
     <string name="coupons">Cupones</string>
+    <string name="configuration">Configuración</string>
+    <string name="myEvent">Mis eventos</string>
+    <string name="aboutUs">Quiénes somos</string>
+    <string name="reportProblem">Reportar un problema</string>
+    <string name="help">Servicio de ayuda</string>
 
 </resources>
