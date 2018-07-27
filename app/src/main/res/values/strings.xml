@@ -17,7 +17,11 @@
     <string name="addMenu">¿Quieres agregar tu menú?</string>
     <string name="assignTable">Tu cliete, ¿Púede asignar su mesa de manera garantizada?</string>
     <string name="askBuy">¿Tus clientes pueden realizar compras del menú?</string>
+    <string name="name">Mireya Jimenez</string>
+    <string name="carrear">Ingenieria en software</string>
+    <string name="aboutUs">Quiénes somos</string>
+    <string name="information">Información</string>
+    <string name="coments">Comentarios</string>
+    <string name="coupons">Cupones</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
