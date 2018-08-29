@@ -12,4 +12,14 @@ public class ProfilePresenterImpl implements ProfilePresenter {
         this.view = view;
         interactor = new ProfileInteractorImpl(this);
     }
+
+    @Override
+    public void goConfiguration() {
+        view.goConfiguration();
+    }
+
+    @Override
+    public void goPrivacy() {
+        view.goPrivacy();
+    }
 }

@@ -9,8 +9,7 @@
     android:layout_marginStart="32dp"
     card_view:cardCornerRadius="8dp"
     android:layout_marginTop="16dp"
-    card_view:cardElevation="16dp"
-    card_view:cardBackgroundColor="#414040">
+    card_view:cardElevation="16dp">
 
     <LinearLayout
         android:background="@drawable/degradado"

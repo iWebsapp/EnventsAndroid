@@ -27,5 +27,18 @@
     <string name="aboutUs">Quiénes somos</string>
     <string name="reportProblem">Reportar un problema</string>
     <string name="help">Servicio de ayuda</string>
+    <string name="privacy">Privacidad y condiciones</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="lorem">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</string>
+    <string name="textEmail">Correo electrónico</string>
+    <string name="change">Cambiar</string>
+    <string name="myemail">anamireyaj@gmail.com</string>
+    <string name="passwordd">Contraseña</string>
+    <string name="birthdate">Fecha de nacimiento</string>
+    <string name="Mybirthdate">27/enero/1997</string>
+    <string name="paymentMethod">Método de pago</string>
+    <string name="masculino">Masculino</string>
+    <string name="manage">Administrar</string>
+
 
 </resources>

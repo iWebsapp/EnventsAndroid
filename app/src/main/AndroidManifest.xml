@@ -49,7 +49,9 @@
         <activity android:name=".domain.account.tables.view.TableActivity" />
         <activity android:name=".domain.account.purchases.view.PurchasesActivity" />
         <activity android:name=".domain.main.view.MainActivity" />
-        <activity android:name=".domain.profile.view.ProfileFragment"></activity>
+        <activity android:name=".domain.profile.view.ProfileFragment" />
+        <activity android:name=".domain.profile.privacy.PrivacyActivity" />
+        <activity android:name=".domain.configuration.view.ConfigurationActivity"></activity>
     </application>
 
 </manifest>
