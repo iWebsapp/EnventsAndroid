@@ -166,6 +166,7 @@
                 android:inputType="date"
                 tools:ignore="TextViewEdits" />
             <TextView
+                android:id="@+id/tvManage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/manage"

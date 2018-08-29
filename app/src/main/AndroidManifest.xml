@@ -51,7 +51,8 @@
         <activity android:name=".domain.main.view.MainActivity" />
         <activity android:name=".domain.profile.view.ProfileFragment" />
         <activity android:name=".domain.profile.privacy.PrivacyActivity" />
-        <activity android:name=".domain.configuration.view.ConfigurationActivity"></activity>
+        <activity android:name=".domain.configuration.view.ConfigurationActivity" />
+        <activity android:name=".domain.tarjets.view.TarjetActivity"></activity>
     </application>
 
 </manifest>
