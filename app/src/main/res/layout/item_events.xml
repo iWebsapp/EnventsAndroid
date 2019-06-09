@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginEnd="@dimen/space_big"
+    android:layout_marginStart="@dimen/space_big"
+    card_view:cardCornerRadius="@dimen/space_small"
+    android:layout_marginTop="@dimen/space_avg"
+    card_view:cardElevation="@dimen/space_avg">
+
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degradado"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/linearEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleEvent"
+                style="@style/textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/space_min"
+                android:layout_marginBottom="@dimen/space_min"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txtDateEvent"
+                style="@style/textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/space_min"
+                android:layout_marginBottom="@dimen/space_min"
+                android:text="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

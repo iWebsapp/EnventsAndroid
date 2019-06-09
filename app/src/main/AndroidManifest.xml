@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mireya.eventsandroid">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-feature
-        android:name="android.hardware.camera2"
-        android:required="true" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="com.iwebsapp.events">
 
     <application
         android:allowBackup="true"
@@ -22,37 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="3f4041f8d213c2111e4fbaf426aad1a46f4953a5" />
-
-        <activity android:name=".domain.splash.view.SplashActivity">
+        <activity
+            android:name=".domain.main.view.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".domain.account.login.view.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".domain.account.create.view.CreateAccount" />
-        <activity android:name=".domain.account.addmenu.view.AddMenu" />
-        <activity android:name=".domain.account.customers.view.CustomersActivity" />
-        <activity android:name=".domain.account.drink.view.DrinkActivity" />
-        <activity android:name=".domain.account.local.view.LocalActivity" />
-        <activity android:name=".domain.account.promotions.view.PromotionsActivity" />
-        <activity android:name=".domain.account.tables.view.TableActivity" />
-        <activity android:name=".domain.account.purchases.view.PurchasesActivity" />
-        <activity android:name=".domain.main.view.MainActivity" />
-        <activity android:name=".domain.profile.view.ProfileFragment" />
-        <activity android:name=".domain.profile.privacy.PrivacyActivity" />
         <activity android:name=".domain.configuration.view.ConfigurationActivity" />
-        <activity android:name=".domain.tarjets.view.TarjetActivity"></activity>
+        <activity android:name=".domain.profile.aboutUs.AboutUsActivity" />
+        <activity android:name=".domain.events.view.EventsActivity" />
+        <activity android:name=".domain.eventsDescription.view.EventDescriptionActivity" />
+        <activity android:name=".domain.products.view.ProductsActivity"></activity>
     </application>
 
 </manifest>

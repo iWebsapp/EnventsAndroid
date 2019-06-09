@@ -1,180 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".domain.configuration.view.ConfigurationActivity">
 
-    <ImageView
-        android:id="@+id/imgEncabezado"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@drawable/header1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="0dp" />
-    
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="80dp">
+    <include layout="@layout/toolbar"/>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cvEmail"
+        android:id="@+id/cardViewContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        card_view:cardCornerRadius="8dp"
-        android:layout_marginTop="16dp"
-        card_view:cardElevation="16dp"
-        android:layout_below="@+id/toolbar"
-        tools:ignore="UnknownIdInLayout">
+        android:layout_marginStart="@dimen/space_big"
+        android:layout_marginTop="@dimen/space_avg"
+        android:layout_marginEnd="@dimen/space_big"
+        android:background="@drawable/degradado"
+        card_view:cardCornerRadius="@dimen/space_small"
+        card_view:cardElevation="@dimen/space_avg">
+
         <LinearLayout
+            android:id="@+id/linearEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
-            android:padding="8dp">
+            android:orientation="vertical">
+
             <TextView
+                android:id="@+id/txtTitleEmail"
+                style="@style/textBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/textEmail"
-                style="@style/texto"/>
+                android:padding="@dimen/space_min"
+                android:text="@string/email" />
+
             <TextView
+                android:id="@+id/txtEmail"
+                style="@style/textBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/myemail"
-                style="@style/texto"/>
+                android:padding="@dimen/space_min"
+                android:text="@string/app_name" />
+
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/txtChangeEmail"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
+                android:text="@string/change"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_big"
+        android:layout_marginTop="@dimen/space_avg"
+        android:layout_marginEnd="@dimen/space_big"
+        android:background="@drawable/degradado"
+        card_view:cardCornerRadius="@dimen/space_small"
+        card_view:cardElevation="@dimen/space_avg">
+
+        <LinearLayout
+            android:id="@+id/linearPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitlePassword"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
+                android:text="@string/password" />
+
+            <TextView
+                android:id="@+id/txtPassword"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
+                android:text="@string/app_name"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/txtChangePassword"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
+                android:text="@string/change"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewBirthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_big"
+        android:layout_marginTop="@dimen/space_avg"
+        android:layout_marginEnd="@dimen/space_big"
+        android:background="@drawable/degradado"
+        card_view:cardCornerRadius="@dimen/space_small"
+        card_view:cardElevation="@dimen/space_avg">
+
+        <LinearLayout
+            android:id="@+id/LinearBirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitleBirthdate"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
+                android:text="@string/birthdate" />
+
+            <TextView
+                android:id="@+id/txtBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:padding="@dimen/space_min"/>
+            <TextView
+                android:id="@+id/txtChangeBirthdate"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/change"
-                style="@style/texto"
-                android:textColor="@color/colorAccent"/>
+                style="@style/textBlack"
+                android:textColor="@color/colorAccent"
+                android:padding="@dimen/space_min"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cvPassword"
+        android:id="@+id/cardViewPayment_methods"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        card_view:cardCornerRadius="8dp"
-        android:layout_marginTop="16dp"
-        card_view:cardElevation="16dp"
-        android:layout_below="@+id/cvEmail"
-        tools:ignore="UnknownIdInLayout">
+        android:layout_marginStart="@dimen/space_big"
+        android:layout_marginTop="@dimen/space_avg"
+        android:layout_marginEnd="@dimen/space_big"
+        android:background="@drawable/degradado"
+        card_view:cardCornerRadius="@dimen/space_small"
+        card_view:cardElevation="@dimen/space_avg">
+
         <LinearLayout
+            android:id="@+id/linearPayment_methods"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
-            android:padding="8dp">
+            android:orientation="vertical">
+
             <TextView
+                android:id="@+id/txtTitlePayment_methods"
+                style="@style/textBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/passwordd"
-                style="@style/texto"/>
+                android:padding="@dimen/space_min"
+                android:text="@string/payment_methods" />
+
             <TextView
+                android:id="@+id/txtPayment_methods"
+                style="@style/textBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/myemail"
-                style="@style/texto"
-                android:inputType="textPassword"
-                tools:ignore="TextViewEdits" />
+                android:padding="@dimen/space_min"
+                android:text="@string/app_name" />
+
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/txtChangePayment_methods"
+                style="@style/textBlack"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/space_min"
                 android:text="@string/change"
-                style="@style/texto"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cvBirthdate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        card_view:cardCornerRadius="8dp"
-        android:layout_marginTop="16dp"
-        card_view:cardElevation="16dp"
-        android:layout_below="@+id/cvPassword"
-        tools:ignore="UnknownIdInLayout">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
-            android:padding="8dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/birthdate"
-                style="@style/texto"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Mybirthdate"
-                style="@style/texto"
-                android:inputType="date"
-                tools:ignore="TextViewEdits" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/change"
-                style="@style/texto"
-                android:textColor="@color/colorAccent"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/cvPaymentMethod"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        card_view:cardCornerRadius="8dp"
-        android:layout_marginTop="16dp"
-        card_view:cardElevation="16dp"
-        android:layout_below="@+id/cvBirthdate"
-        tools:ignore="UnknownIdInLayout">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="8dp"
-            android:padding="8dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/paymentMethod"
-                style="@style/texto"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/masculino"
-                style="@style/texto"
-                android:inputType="date"
-                tools:ignore="TextViewEdits" />
-            <TextView
-                android:id="@+id/tvManage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/manage"
-                style="@style/texto"
-                android:textColor="@color/colorAccent"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-    </RelativeLayout>
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
